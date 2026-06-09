@@ -315,9 +315,9 @@
 
     /* RESPONSIVE */
     @media (max-width: 1024px) {
-      .hero { flex-direction: column; }
+      .hero { flex-direction: column; height: auto; min-height: auto; }
       .hero-content { width: 100%; padding: 120px 8% 40px; }
-      .hero-visual { width: 100%; height: 50vh; }
+      .hero-visual { width: 100%; height: 50vh; min-height: 400px; }
       .app-section { flex-direction: column; height: auto; padding: 120px 8%; text-align: center; }
       .app-content { width: 100%; padding: 0; margin-bottom: 64px; display: flex; flex-direction: column; align-items: center;}
       .app-visual { width: 100%; }
@@ -330,9 +330,10 @@
       .hamburger { display: flex; }
       .timeline { grid-template-columns: 1fr; margin-top: 40px; gap: 48px;}
       .timeline::before { left: 40px; top: 0; bottom: 0; height: auto; width: 1px; border-top: none; border-left: 2px dashed var(--brand-sage); }
-      .step { display: flex; align-items: flex-start; text-align: left; padding-top: 0; }
-      .step-icon { margin: 0 24px 0 0; flex-shrink: 0; }
-      .step h3, .step p { text-align: left; }
+      .step { display: grid; grid-template-columns: 80px 1fr; gap: 4px 16px; padding-top: 0; align-items: start; }
+      .step-icon { grid-column: 1; grid-row: 1 / 4; margin: 0; }
+      .step-label, .step h3, .step p { grid-column: 2; text-align: left; margin: 0; }
+      .step p { max-width: none; }
       .hero h1 { font-size: 56px; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
       .section-header h2 { font-size: 40px; }
@@ -340,11 +341,15 @@
       .booking-form input, .booking-form button { border-radius: var(--radius-pill); }
     }
     @media (max-width: 480px) {
+      .section-padding { padding: 80px 5%; }
+      .hero-content { padding: 100px 5% 40px; }
       .footer-grid { grid-template-columns: 1fr; }
       .sust-grid { grid-template-columns: 1fr; }
       .hero-cta { flex-direction: column; align-items: stretch; width: 100%; }
       .hero-cta .btn-primary { width: 100%; text-align: center; }
-      .hero h1 { font-size: 48px; }
+      .hero h1 { font-size: 42px; }
+      .section-header h2 { font-size: 32px; }
+      .hero-visual { height: 40vh; min-height: 300px; }
     }
   </style>
 </head>
