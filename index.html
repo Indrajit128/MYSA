@@ -93,17 +93,17 @@
       backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
       background: rgba(247, 244, 239, 0.88); box-shadow: 0 1px 0 rgba(28,28,30,0.08); padding: 16px 48px;
     }
-    .logo { font-family: var(--font-display); font-style: italic; font-size: 26px; font-weight: 600; color: var(--text-white); display: flex; align-items: baseline; transition: color 280ms var(--ease); }
+    .logo { flex: 1; font-family: var(--font-display); font-style: italic; font-size: 26px; font-weight: 600; color: var(--text-white); display: flex; align-items: baseline; transition: color 280ms var(--ease); }
     nav.scrolled .logo, nav.scrolled .nav-links a { color: var(--text-ink); }
     .logo-dot { width: 6px; height: 6px; background: var(--brand-sage); border-radius: 50%; margin-left: 2px; }
     
-    .nav-links { display: flex; gap: 32px; }
+    .nav-links { flex: 1; justify-content: center; display: flex; gap: 32px; }
     .nav-links a { font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-white); position: relative; transition: color 280ms var(--ease); }
     .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 50%; width: 0; height: 2px; background: var(--brand-sage); transition: all 280ms var(--ease); transform: translateX(-50%); }
     .nav-links a:hover { color: var(--brand-sage); }
     .nav-links a:hover::after { width: 100%; }
 
-    .nav-actions { display: flex; gap: 16px; align-items: center; }
+    .nav-actions { flex: 1; justify-content: flex-end; display: flex; gap: 16px; align-items: center; }
     .btn-ghost { color: var(--text-white); font-size: 14px; font-weight: 500; border: 1px solid var(--text-white); padding: 10px 24px; border-radius: var(--radius-pill); transition: all 280ms var(--ease); }
     nav.scrolled .btn-ghost { color: var(--text-ink); border-color: var(--text-ink); }
     .btn-ghost:hover { background: var(--text-ink); color: var(--text-white); }
@@ -193,6 +193,7 @@
     .section-header h2 { font-size: 52px; font-weight: 700; margin-top: 16px; max-width: 560px; }
 
     .services-grid { display: flex; gap: 24px; overflow-x: auto; padding-bottom: 32px; scrollbar-width: none; }
+    @media (min-width: 1025px) { .services-grid { justify-content: center; } }
     .services-grid::-webkit-scrollbar { display: none; }
     .service-card { min-width: 280px; height: 340px; background: var(--text-white); border-radius: var(--radius-card); padding: 32px 24px; box-shadow: var(--shadow-card); transition: all var(--duration) var(--ease); display: flex; flex-direction: column; position: relative; }
     .service-card:hover { transform: scale(1.03); box-shadow: var(--shadow-hover); }
