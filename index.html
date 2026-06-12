@@ -101,8 +101,8 @@
       border: 1px solid rgba(28, 28, 30, 0.08);
       padding: 16px 32px;
     }
-    .logo { flex: 1; font-family: var(--font-body); font-style: normal; font-size: 28px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--brand-sage); display: flex; align-items: baseline; transition: color 280ms var(--ease); }
-    .logo-dot { width: 6px; height: 6px; background: var(--brand-sage); border-radius: 50%; margin-left: 2px; }
+    .logo { flex: 1; font-family: var(--font-body); font-style: normal; font-size: 28px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--brand-sage); display: flex; align-items: center; transition: color 280ms var(--ease); }
+    .logo-icon { height: 44px; width: auto; object-fit: contain; margin-right: 8px; }
     
     .nav-links { flex: 1; justify-content: center; display: flex; gap: 32px; }
     .nav-links a { font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-ink); position: relative; transition: color 280ms var(--ease); }
@@ -382,12 +382,7 @@
   <!-- SECTION 1 - NAV -->
   <nav id="navbar">
     <a href="#" class="logo">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" width="36" height="36" style="margin-right: 8px; transform: scaleX(-1);">
-        <path d="M240,176H223.33A80.12,80.12,0,0,0,160,112H80a8,8,0,0,0,0,16h80a64.07,64.07,0,0,1,53.25,28.2A8,8,0,0,0,219.92,160H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16Z"/>
-        <path d="M245.54,196.22A8,8,0,0,0,240,192H16a8,8,0,0,0-3.32,15.28C32.18,216.48,68.84,224,128,224s95.82-7.52,115.32-16.72A8,8,0,0,0,245.54,196.22Z"/>
-        <path d="M125.66,42.34C108,60,108,76,108,88a8,8,0,0,0,16,0c0-6,0-16.35,11.66-28C153.33,42.35,153.33,26,153.33,14a8,8,0,0,0-16,0C137.33,20,137.33,30.34,125.66,42.34Z"/>
-        <path d="M173.66,58.34c-11.32,11.32-11.32,24.36-11.32,33.66a8,8,0,0,0,16,0c0-4.08,0-11.83,8.32-20.15,11.32-11.32,11.32-24.36,11.32-33.66a8,8,0,0,0-16,0C182,42.27,182,50.05,173.66,58.34Z"/>
-      </svg>
+      <img src="assets/mysa_icon.png" alt="Mysa Icon" class="logo-icon">
       MYSA
     </a>
     <div class="nav-links">
