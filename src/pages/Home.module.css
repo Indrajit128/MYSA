@@ -74,7 +74,7 @@
 .servicesSection { background: var(--bg-primary); }
 .sectionHeader { margin-bottom: 56px; }
 .sectionHeader h2 { font-size: clamp(32px, 3.5vw, 52px); margin-top: 16px; max-width: 560px; }
-.servicesGrid { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
+.servicesGrid { display: flex; gap: 24px; flex-wrap: wrap; justify-content: flex-start; }
 .serviceCard {
   min-width: 260px; flex: 1; max-width: 320px; background: #fff;
   border-radius: var(--radius-card); padding: 32px 24px;
@@ -183,12 +183,23 @@
 
 /* TESTIMONIALS */
 .testimonialsSection { background: var(--bg-stone); }
-.testScroll { overflow: hidden; margin-top: 48px; }
+.testScroll { 
+  overflow-x: auto; 
+  margin-top: 48px; 
+  -webkit-overflow-scrolling: touch; 
+  scrollbar-width: none; /* Firefox */
+  cursor: grab;
+}
+.testScroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+.testScroll:active {
+  cursor: grabbing;
+}
 .testTrack {
   display: flex; gap: 24px; width: max-content;
-  animation: scrollRow 45s linear infinite;
+  padding-bottom: 24px; /* Space for hover shadow */
 }
-.testTrack:hover { animation-play-state: paused; }
 .testCard {
   background: #fff; padding: 32px; border-radius: var(--radius-card);
   width: 360px; flex-shrink: 0; transition: transform 0.3s, box-shadow 0.3s;

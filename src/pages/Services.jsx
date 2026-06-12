@@ -13,18 +13,10 @@ export default function Services({ openModal }) {
           <p className={styles.cardText}>
             Steam ironing is our flagship service. It is not just a chore; it's an art. Our master pressers use state-of-the-art industrial tension equipment and temperature-controlled steam to ensure your shirts, trousers, and delicate linens have razor-sharp creases and are completely wrinkle-free. We treat each fabric type—from heavy cottons to delicate silks—with the exact temperature and steam pressure it requires, extending the life of your garments and keeping you looking impeccably sharp.
           </p>
-          <button className="btn-ghost" onClick={() => openModal('booking')} style={{ marginTop: '24px' }}>Book Steam Ironing from ₹79</button>
+          <button className="btn-ghost" onClick={() => openModal('booking')} style={{ marginTop: '24px' }}>Book Steam Ironing</button>
         </div>
 
 
-
-        <div className={styles.card}>
-          <h2 className={styles.cardTitle}>Eco-Friendly Dry Cleaning</h2>
-          <p className={styles.cardText}>
-            Precision care for delicate fabrics. We use 100% PERC-free, advanced hydrocarbon solvents to gently clean your silks, wools, and tailored garments. This process lifts stains without damaging sensitive fibers or leaving harsh chemical odors behind, ensuring your investment pieces remain pristine.
-          </p>
-          <button className="btn-ghost" onClick={() => openModal('booking')} style={{ marginTop: '24px' }}>Book Dry Cleaning from ₹199</button>
-        </div>
       </div>
     </div>
   )

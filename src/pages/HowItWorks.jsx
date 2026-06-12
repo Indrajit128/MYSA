@@ -28,7 +28,7 @@ export default function HowItWorks() {
           <div className={styles.stepNumber}>3️⃣</div>
           <div>
             <h3 className={styles.cardTitle}>Expert Care</h3>
-            <p className={styles.cardText}>Whether it's our flagship Steam Ironing process or precise Dry Cleaning, your clothes are processed according to their specific fabric needs. We use eco-friendly solvents and high-grade steam presses.</p>
+            <p className={styles.cardText}>Whether it's our flagship Steam Ironing process or specialist care, your clothes are processed according to their specific fabric needs. We use eco-friendly solvents and high-grade steam presses.</p>
           </div>
         </div>
 

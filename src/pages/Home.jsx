@@ -17,19 +17,10 @@ const SERVICES = [
     icon: '✨',
     title: 'Premium Steam Ironing',
     desc: 'Crisp lines, zero effort. Our flagship service.',
-    price: 'From ₹79/item',
     detailTitle: 'Premium Steam Ironing',
     detailDesc: 'Steam ironing is not just a chore; it\'s an art. Our master pressers use state-of-the-art industrial tension equipment and temperature-controlled steam to ensure your shirts, trousers, and delicate linens have razor-sharp creases and are completely wrinkle-free. We treat each fabric type—from heavy cottons to delicate silks—with the exact temperature and steam pressure it requires, extending the life of your garments and keeping you looking impeccably sharp.',
   },
 
-  {
-    icon: '🧥',
-    title: 'Dry Cleaning',
-    desc: 'Precision care for delicate fabrics.',
-    price: 'From ₹199/item',
-    detailTitle: 'Dry Cleaning',
-    detailDesc: 'We use 100% PERC-free, advanced hydrocarbon solvents to gently clean your silks, wools, and tailored garments without damaging fibers or leaving chemical odors.',
-  },
 ]
 
 const TESTIMONIALS = [
@@ -185,7 +176,6 @@ export default function Home({ openModal }) {
               <h3>{svc.title}</h3>
               <p>{svc.desc}</p>
               <div className={styles.cardBottom}>
-                <span className={styles.pillTag}>{svc.price}</span>
                 <button
                   className={styles.cardLink}
                   onClick={() => openModal('learn', { title: svc.detailTitle, desc: svc.detailDesc })}
@@ -270,30 +260,7 @@ export default function Home({ openModal }) {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className={`section-padding ${styles.testimonialsSection}`}>
-        <RevealSection className={styles.sectionHeader} style={{ textAlign: 'center' }}>
-          <div className="eyebrow" style={{ justifyContent: 'center' }}>What Customers Say</div>
-          <h2 style={{ margin: '16px auto 0' }}>50,000 people trust Mysa with their wardrobe.</h2>
-        </RevealSection>
-        <div className={styles.testScroll}>
-          <div className={styles.testTrack}>
-            {[...TESTIMONIALS, ...TESTIMONIALS].map((t, i) => (
-              <div key={i} className={styles.testCard}>
-                <div className="stars">★★★★★</div>
-                <p className={styles.testQuote}>"{t.quote}"</p>
-                <div className={styles.testAuthor}>
-                  <div className={styles.testAvatar} />
-                  <div>
-                    <strong>{t.name}</strong>, {t.city}<br />
-                    <span style={{ fontSize: 11, color: 'var(--brand-sage)' }}>{t.service}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* APP SECTION */}
       <section className={styles.appSection}>

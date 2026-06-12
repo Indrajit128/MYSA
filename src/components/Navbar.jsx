@@ -28,10 +28,10 @@ export default function Navbar({ openModal }) {
   }
 
   const navLinks = [
+    { label: 'Home', to: '/' },
     { label: 'Services', to: '/services' },
     { label: 'How It Works', to: '/how-it-works' },
     { label: 'Sustainability', to: '/sustainability' },
-
     { label: 'About', to: '/about' },
   ]
 

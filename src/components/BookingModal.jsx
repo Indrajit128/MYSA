@@ -39,7 +39,6 @@ export default function BookingModal({ open, onClose, type, learnData, onSwitchT
                   <label>Service Type</label>
                   <select value={formData.service} onChange={e => setFormData({ ...formData, service: e.target.value })}>
                     <option>Premium Steam Ironing</option>
-                    <option>Dry Cleaning</option>
                     <option>Specialist Care</option>
                   </select>
                 </div>
