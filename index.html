@@ -13,14 +13,14 @@
   <style>
     /* SECTION 0 - DESIGN SYSTEM TOKENS & RESET */
     :root {
-      --bg-primary: #F7F4EF;
-      --bg-stone: #E8E4DC;
-      --text-ink: #1C1C1E;
-      --brand-sage: #7A9E87;
-      --brand-sage-dark: #5C8068;
+      --bg-primary: #FCFAF5;
+      --bg-stone: #E6EEEE;
+      --text-ink: #0A3638;
+      --brand-sage: #107575;
+      --brand-sage-dark: #0A5A5A;
       --text-white: #FFFFFF;
-      --text-mist: #C8C0B4;
-      --brand-gold: #C5A55A;
+      --text-mist: #678E8E;
+      --brand-gold: #F5B83B;
 
       --font-display: 'Cormorant Garamond', serif;
       --font-body: 'DM Sans', sans-serif;
@@ -101,7 +101,7 @@
       border: 1px solid rgba(28, 28, 30, 0.08);
       padding: 16px 32px;
     }
-    .logo { flex: 1; font-family: var(--font-display); font-style: italic; font-size: 26px; font-weight: 600; color: var(--text-ink); display: flex; align-items: baseline; transition: color 280ms var(--ease); }
+    .logo { flex: 1; font-family: var(--font-body); font-style: normal; font-size: 28px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--brand-sage); display: flex; align-items: baseline; transition: color 280ms var(--ease); }
     .logo-dot { width: 6px; height: 6px; background: var(--brand-sage); border-radius: 50%; margin-left: 2px; }
     
     .nav-links { flex: 1; justify-content: center; display: flex; gap: 32px; }
@@ -113,8 +113,8 @@
     .nav-actions { flex: 1; justify-content: flex-end; display: flex; gap: 16px; align-items: center; }
     .btn-ghost { color: var(--text-ink); font-size: 14px; font-weight: 500; border: 1px solid var(--text-ink); padding: 10px 24px; border-radius: var(--radius-pill); transition: all 280ms var(--ease); }
     .btn-ghost:hover { background: var(--text-ink); color: var(--text-white); }
-    .btn-primary { background: var(--brand-sage); color: var(--text-white); font-size: 15px; font-weight: 500; padding: 14px 28px; border-radius: var(--radius-pill); transition: all 280ms var(--ease); }
-    .btn-primary:hover { background: var(--brand-sage-dark); transform: scale(1.02); box-shadow: 0 0 0 2px var(--bg-primary), 0 0 0 4px var(--brand-gold); }
+    .btn-primary { background: var(--brand-gold); color: var(--text-ink); font-size: 15px; font-weight: 600; padding: 14px 28px; border-radius: var(--radius-pill); transition: all 280ms var(--ease); }
+    .btn-primary:hover { background: #E5A92E; transform: scale(1.02); box-shadow: 0 0 0 2px var(--bg-primary), 0 0 0 4px var(--brand-sage); }
 
     .hamburger { display: none; flex-direction: column; gap: 6px; cursor: pointer; z-index: 2000; }
     .hamburger span { display: block; width: 28px; height: 2px; background: var(--text-ink); transition: all 0.3s; }
@@ -381,7 +381,7 @@
 
   <!-- SECTION 1 - NAV -->
   <nav id="navbar">
-    <a href="#" class="logo">Mysa<div class="logo-dot"></div></a>
+    <a href="#" class="logo">MYSA</a>
     <div class="nav-links">
       <a href="#services">Services</a>
       <a href="#how">How It Works</a>
