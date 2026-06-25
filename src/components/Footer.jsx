@@ -75,7 +75,7 @@ export default function Footer({ openModal }) {
         <div className={styles.col}>
           <h4 className={styles.colTitle}>Support</h4>
           <ul className={styles.colList}>
-
+            <li><a href="/MYSA_Refund_Policy.docx" target="_blank" rel="noopener noreferrer">Refund Policy</a></li>
             <li><Link to="/contact">Contact Us</Link></li>
             <li><a href="mailto:mysadigital.com@gmail.com">mysadigital.com@gmail.com</a></li>
             <li><a href="tel:+917387517557">+91 73875 17557</a></li>
@@ -104,6 +104,7 @@ export default function Footer({ openModal }) {
       <div className={styles.bottom}>
         <p>© {new Date().getFullYear()} Mysa. All rights reserved.</p>
         <div className={styles.bottomLinks}>
+          <a href="/MYSA_Refund_Policy.docx" target="_blank" rel="noopener noreferrer">Refund Policy</a>
           <a href="#">Privacy</a>
           <a href="#">Terms</a>
           <a href="#">Cookies</a>
