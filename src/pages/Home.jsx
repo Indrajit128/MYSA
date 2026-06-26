@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import heroImg from '../../assets/hero_ironing.jpg'
+import premiumIroningImg from '../../assets/premium_steam_ironing.png'
 
 import styles from './Home.module.css'
 
@@ -181,27 +182,41 @@ export default function Home({ openModal }) {
 
       {/* SERVICES */}
       <section className={`section-padding ${styles.servicesSection}`} id="services">
-        <RevealSection className={styles.sectionHeader}>
-          <div className="eyebrow">What We Care For</div>
-          <h2>Every garment. Every fabric. Every time.</h2>
-        </RevealSection>
-        <RevealSection delay="delay-1" className={styles.servicesGrid}>
-          {SERVICES.map((svc) => (
-            <div key={svc.title} className={styles.serviceCard}>
-              <div className={styles.serviceIcon}>{svc.icon}</div>
-              <h3>{svc.title}</h3>
-              <p>{svc.desc}</p>
-              <div className={styles.cardBottom}>
-                <button
-                  className={styles.cardLink}
-                  onClick={() => openModal('learn', { title: svc.detailTitle, desc: svc.detailDesc })}
-                >
-                  Learn more →
-                </button>
+        <div className={styles.servicesContainer}>
+          <div className={styles.servicesLeft}>
+            <RevealSection className={styles.sectionHeader}>
+              <div className="eyebrow">What We Care For</div>
+              <h2>Every garment. Every fabric. Every time.</h2>
+            </RevealSection>
+            <RevealSection delay="delay-1" className={styles.servicesGrid}>
+              {SERVICES.map((svc) => (
+                <div key={svc.title} className={styles.serviceCard}>
+                  <div className={styles.serviceIcon}>{svc.icon}</div>
+                  <h3>{svc.title}</h3>
+                  <p>{svc.desc}</p>
+                  <div className={styles.cardBottom}>
+                    <button
+                      className={styles.cardLink}
+                      onClick={() => openModal('learn', { title: svc.detailTitle, desc: svc.detailDesc })}
+                    >
+                      Learn more →
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </RevealSection>
+          </div>
+          <div className={styles.servicesRight}>
+            <RevealSection delay="delay-2" className={styles.visualWrapper}>
+              <div className={`${styles.sparkle} ${styles.sparkle1}`}></div>
+              <div className={`${styles.sparkle} ${styles.sparkle2}`}></div>
+              <div className={`${styles.sparkle} ${styles.sparkle3}`}></div>
+              <div className={styles.ironContainer}>
+                <img src={premiumIroningImg} alt="Premium Steam Ironing" className={styles.premiumImg} style={{ objectFit: 'cover', borderRadius: 'var(--radius-lg)' }} />
               </div>
-            </div>
-          ))}
-        </RevealSection>
+            </RevealSection>
+          </div>
+        </div>
       </section>
 
       {/* HOW IT WORKS */}
