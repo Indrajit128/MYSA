@@ -18,8 +18,7 @@ const SERVICES = [
     desc: 'Crisp lines, zero effort. Our flagship service.',
     detailTitle: 'Premium Steam Ironing',
     detailDesc: 'Steam ironing is not just a chore; it\'s an art. Our master pressers use state-of-the-art industrial tension equipment and temperature-controlled steam to ensure your shirts, trousers, and delicate linens have razor-sharp creases and are completely wrinkle-free. We treat each fabric type—from heavy cottons to delicate silks—with the exact temperature and steam pressure it requires, extending the life of your garments and keeping you looking impeccably sharp.',
-  },
-
+  }
 ]
 
 const TESTIMONIALS = [
@@ -274,7 +273,7 @@ export default function Home({ openModal }) {
       <section className={styles.testimonialVideoSection}>
         <div className={styles.testVideoContent}>
           <RevealSection>
-            <div className="eyebrow" style={{ color: 'var(--brand-sage)' }}>CUSTOMER STORIES</div>
+            <div className="eyebrow" style={{ color: 'var(--brand-gold)' }}>CUSTOMER STORIES</div>
           </RevealSection>
           <RevealSection delay="delay-1">
             <h2 className={styles.testVideoTitle}>"Mysa completely changed how I manage my wardrobe."</h2>

@@ -16,7 +16,7 @@
 }
 
 .logo { display: flex; align-items: center; flex: 1; }
-.logoImg { height: 56px; width: auto; object-fit: contain; }
+.logoImg { height: 56px; width: auto; object-fit: contain; transform: scale(1.4); transform-origin: left center; }
 
 .navLinks { display: flex; gap: 28px; align-items: center; flex: 2; justify-content: center; }
 .navLink {
