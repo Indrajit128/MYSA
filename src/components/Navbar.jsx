@@ -55,7 +55,7 @@ export default function Navbar({ openModal }) {
         </div>
 
         <div className={styles.navActions}>
-          <a href="https://wa.me/917387517557?text=Hi%20Mysa!%20I%27d%20like%20to%20book%20a%20pickup%20for%20your%20premium%20steam%20ironing%20service." target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ display: 'inline-block', textAlign: 'center' }}>
+          <a href="https://wa.me/917387517557?text=Hi" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ display: 'inline-block', textAlign: 'center' }}>
             Book on WhatsApp
           </a>
         </div>
@@ -77,7 +77,7 @@ export default function Navbar({ openModal }) {
           </Link>
         ))}
         <a
-          href="https://wa.me/917387517557?text=Hi%20Mysa!%20I%27d%20like%20to%20book%20a%20pickup%20for%20your%20premium%20steam%20ironing%20service."
+          href="https://wa.me/917387517557?text=Hi"
           target="_blank"
           rel="noopener noreferrer"
           className={`btn-primary ${styles.mobileCta}`}
