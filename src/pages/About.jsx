@@ -11,10 +11,10 @@ export default function About() {
 
       <div className={styles.textContent}>
         <p>
-          Founded in 2023, Mysa was born out of a simple frustration: premium clothing deserves premium care, but local dry cleaners often use harsh chemicals, ruin fabrics, and require tedious drop-offs and pick-ups.
+          Founded in 2023, Mysa was born out of a simple frustration: premium clothing deserves premium care, but local ironing services often use poor techniques, ruin fabrics, and require tedious drop-offs and pick-ups.
         </p>
         <p>
-          We built Mysa to be the modern valet for your wardrobe. By combining state-of-the-art garment care technology—like our flagship tension-equipment steam pressing and PERC-free dry cleaning—with a seamless digital experience, we've removed the friction from laundry.
+          We built Mysa to be the modern valet for your wardrobe. By combining state-of-the-art garment care technology—like our flagship tension-equipment steam pressing—with a seamless digital experience, we've removed the friction from garment care.
         </p>
         <p>
           Today, we serve over 50,000 customers across major metropolitan areas. Our team consists of master pressers, textile experts, and dedicated logistics professionals who ensure that every garment is returned to you crisp, clean, and ready to wear.
